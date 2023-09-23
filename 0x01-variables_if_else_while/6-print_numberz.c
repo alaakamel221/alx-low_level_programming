@@ -9,12 +9,11 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-int x = '0';
+int x = 0;
 
-while (x < '10')
+for ( ; x < 10; x++)
 	{
-	putchar(x);
-	x++;
+	putchar('0' + x);
 	}
 	putchar('\n');
 
