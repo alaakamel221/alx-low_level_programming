@@ -9,17 +9,18 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int x = 0;
+	int x = '0';
 	
-	if (x <= 9)
+	while (x <= '9')
 	{
-	putchar('0' + x);
-	if (x != 9)
-	{	
+	putchar(x);
+	if (x != '9')
+	{
 	putchar(',');
 	putchar(' ');
 	}
 	x++;
 	}
+	putchar('\n');
 return (0);
 }
