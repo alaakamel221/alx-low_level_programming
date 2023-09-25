@@ -21,9 +21,7 @@ l++;
 p++;
 	}
 	if (*p == '\0')
-
-return (haystack);
+	return (haystack);
 }
 return (0);
-
 }
