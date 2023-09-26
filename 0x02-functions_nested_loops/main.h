@@ -1,17 +1,32 @@
-#ifndef MAIN_HEADER_FILE
-#define MAI_HEADER_FILE
+#ifndef main_h
 
-int _putchar(char c);
-/**void print_alphabet(void);
-*void print_alphabet_x10(void);
-*Prototype: int _islower(int c);
-*Prototype: int _isalpha(int c);
-*Prototype: int print_sign(int n);
-*Prototype: int _abs(int);
-*Prototype: int print_last_digit(int);
-*Prototype: void jack_bauer(void);
-*Prototype: void times_table(void);
-*Prototype: int add(int, int);
-*Prototype: void print_to_98(int n);
-*/
+#define main_h
+
+
+int _putchar(char);
+
+void print_alphabet(void);
+
+void print_alphabet_x10(void);
+
+int _islower(int c);
+
+int _isalpha(int c);
+
+int print_sign(int n);
+
+int _abs(int);
+
+int print_last_digit(int);
+
+void jack_bauer(void);
+
+void times_table(void);
+
+int add(int, int);
+
+void print_to_98(int n);
+
+void print_times_table(int n);
+
 #endif
