@@ -2,16 +2,15 @@
 
 /**
 * _puts_recursion - like puts
-* @s: pointer to string
-* Return: 0
+* @s: pointer to string 
 */
 void _puts_recursion(char *s)
 {
-	if (*s != '0')
+	if (*s != '\0')
 	{
-	putchar(*s);
+	putchar (*s);
 	_puts_recursion(s + 1);
 	}
 	else
-	putchar('\n');
+	putchar ('\n');
 }
