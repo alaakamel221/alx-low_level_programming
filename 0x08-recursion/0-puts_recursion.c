@@ -2,7 +2,7 @@
 
 /**
 * _puts_recursion - like puts
-* @s: pointer to string 
+* @s: pointer to string
 */
 void _puts_recursion(char *s)
 {
