@@ -27,10 +27,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 	str[v] = s1[v];
 	}
-	for (d = 0; d <= n; d++)
+	for (d = 0; d < n; d++)
 	{
 	str[v] = s2[d];
 	v++;
 	}
+	str[v] = '\0';
 	return (str);
 	}
