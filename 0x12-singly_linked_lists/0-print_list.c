@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * _str_length - to calculate length
- * @s: char ptr
- * Return: int
- */
-int _str_length(char *s)
+* str_length - to calculate length
+* @s: char ptr
+* Return: int
+*/
+int str_length(char *s)
 {
 	int i = 0;
 
@@ -17,10 +17,10 @@ return (i);
 }
 
 /**
- * print_list - fun
- * @h: list
- * Return: size_t
- */
+* print_list - fun
+* @h: list
+* Return: size_t
+*/
 size_t print_list(const list_t *h)
 	{
 	int i = 0;
@@ -28,7 +28,7 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		if (h->str != NULL)
-			printf("[%d] %s\n", _str_length(h->str), h->str);
+			printf("[%d] %s\n", str_length(h->str), h->str);
 		else
 			printf("[0] (nil)\n");
 		h = h->next;
