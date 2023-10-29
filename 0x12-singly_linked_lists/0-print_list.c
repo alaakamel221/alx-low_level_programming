@@ -8,10 +8,11 @@
 int _str_length(char *s)
 {
 	int i = 0;
+
 	if (!s)
 		return (0);
-while(*s++)
-       i++;
+	while (*s++)
+	i++;
 return (i);
 }
 
@@ -34,4 +35,4 @@ size_t print_list(const list_t *h)
 i++;
 	}
 	return (i);
-	}
+}
