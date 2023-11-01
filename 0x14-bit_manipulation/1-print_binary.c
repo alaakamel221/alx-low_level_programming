@@ -11,8 +11,10 @@ void print_binary(unsigned long int n)
 	char str;
 	int x = n;
 	char *cat;
-       
+
 	cat = malloc(sizeof(n) * 8);
+	if (n == 0)
+		printf("0");
 
 	while (x > 0)
 	{
