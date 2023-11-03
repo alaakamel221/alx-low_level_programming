@@ -11,22 +11,24 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	int bit = sizeof(n) * 8, i = index;
 	int printed = 0;
-	
+
 	if (!bit)
 		return (-1);
-	 while (bit)
-        {
-                if (*n & (1L << --bit))
-                {
-                        if (bit == i)
-                                return (1);
-                        printed++;
-                }
-                else if (i == bit)
+	while (bit)
+	{
+		if (*n & (1L << --bit))
+		{
+			if (bit == i)
+				return (1);
+			printed++;
+		}
+		else if (i == bit)
 		{
 			*n = *n | (1 << i);
-                        return (1);
+				return (1);
 		}
-	}
-		return (1);
-	}
+		}
+	if (i > bit)
+		return (-1);
+	return (1);
+}
