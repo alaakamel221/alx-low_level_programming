@@ -28,7 +28,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 	if (!printed)
 		return (0);
-	if (i > bit)
-		return (-1);
 return (0);
 }
