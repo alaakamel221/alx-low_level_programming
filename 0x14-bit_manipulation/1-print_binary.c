@@ -1,33 +1,26 @@
 #include "main.h"
 /**
- * print_binary - func my own
+ * print_binary - is fun
  * @n: int
- * Return: NULL
+ * Return: void
  */
+
+
 
 void print_binary(unsigned long int n)
 {
-	int i = 0;
-	char str;
-	int x = n;
-	char *cat;
+int bit = sizeof(n) * 8, printed = 0;
 
-	cat = malloc(sizeof(n) * 8);
-	if (n == 0)
-		printf("0");
-
-	while (x > 0)
+	while (bit)
 	{
-		if (x % 2 == 0)
-			str = '0';
-		else
-			str = '1';
-	x = x / 2;
-	cat[i] = str;
-	i++;
+		if (n & 1L << --bit)
+		{
+			putchar('1');
+			printed++;
+		}
+		else if (printed)
+			putchar('0');
 	}
-	while (i--)
-	{
-		printf("%c", cat[i]);
-	}
+	if (!printed)
+		putchar('0');
 }
